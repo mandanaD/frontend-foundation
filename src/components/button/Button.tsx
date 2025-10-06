@@ -1,5 +1,5 @@
 import {cva} from "class-variance-authority";
-import type {ButtonProps} from "./button.types.ts";
+import type {ButtonProps} from "./Button.types.ts";
 
 export const Button = ({variant="primary", size="md", appearance="solid", shape="regular", children = "", isLoading = false, ...props}: ButtonProps) => {
     const classes = cva(
