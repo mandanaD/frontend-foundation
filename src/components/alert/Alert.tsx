@@ -1,17 +1,17 @@
-import type {AlertProps} from "./alert.types.ts";
+import type {AlertProps} from "./Alert.types.ts";
 import {cva} from "class-variance-authority";
 import {Info, CheckCircle, AlertTriangle, XCircle, CircleQuestionMark} from "lucide-react";
 
-export const Alert = ({title, description, type, ...props}: AlertProps) => {
+export const Alert = ({title, description, HaveIcon=true, type, ...props}: AlertProps) => {
     const classes = cva(
-        "alert !items-start",
+        "alert alert-soft !items-start",
         {
             variants: {
                 type: {
-                    info: "alert-info",
-                    success: "alert-success",
-                    warning: "alert-warning",
-                    error: "alert-error",
+                    info: "alert-info !border-info/40",
+                    success: "alert-success !border-success/40",
+                    warning: "alert-warning !border-warning/40",
+                    error: "alert-error !border-error/40",
                 }
             }
         }
@@ -35,7 +35,11 @@ export const Alert = ({title, description, type, ...props}: AlertProps) => {
 
     return (
         <div role="alert" className={classes({type})} {...props}>
-            {iconHandler()}
+            {
+                HaveIcon && (
+                    iconHandler()
+                )
+            }
             <div>
                 <div>{title}</div>
                 <div>
