@@ -15,6 +15,9 @@ const meta: Meta<typeof InputField> = {
         required:true,
     },
     argTypes:{
+        type:{
+            control:"select"
+        },
         accept:{
             control:"select"
         },
