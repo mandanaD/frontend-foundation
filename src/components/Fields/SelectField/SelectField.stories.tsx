@@ -4,7 +4,7 @@ import {SelectField} from "./SelectField";
 type Story = StoryObj<typeof SelectField>
 
 const meta: Meta<typeof SelectField> = {
-    title: 'Components/Form/SelectField',
+    title: 'Components/Fields/SelectField',
     component: SelectField,
     tags: ['autodocs'],
     args: {
