@@ -6,6 +6,7 @@ type Story = StoryObj<typeof Rate>;
 const meta: Meta<typeof Rate> = {
     title: 'Components/Rate',
     component: Rate,
+    tags: ['autodocs'],
     args: {
         size: "md",
         shape: "starBold",

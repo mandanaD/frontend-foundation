@@ -6,6 +6,7 @@ type Story=StoryObj<typeof InputField>
 const meta: Meta<typeof InputField> = {
     title: "Components/Fields/InputField",
     component:InputField,
+    tags: ['autodocs'],
     args:{
         type:"text",
         label:"Label",

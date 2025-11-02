@@ -6,6 +6,7 @@ type Story = StoryObj<typeof Loading>;
 const meta: Meta<typeof Loading> = {
     title: 'Components/Loading',
     component: Loading,
+    tags: ['autodocs'],
     args: {
         variant:"primary",
         size: "md",

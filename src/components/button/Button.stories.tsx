@@ -6,6 +6,7 @@ type Story = StoryObj<typeof Button>;
 const meta: Meta<typeof Button> = {
     title: 'Components/Button',
     component: Button,
+    tags: ['autodocs'],
     args: {
         children: "Button",
         size: "md",

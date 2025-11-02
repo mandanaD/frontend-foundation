@@ -8,6 +8,7 @@ type Story = StoryObj<typeof Badge>
 const meta: Meta<typeof Badge> = {
     title: 'Components/Badge',
     component: Badge,
+    tags: ['autodocs'],
     args: {
         variant:"primary",
         children:"Badge"
