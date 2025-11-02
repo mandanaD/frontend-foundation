@@ -91,11 +91,11 @@
     --color-base-content: var(--color-slate-900);
 
     --color-info: var(--color-information-500);  /* info */
-    --color-info-content: var(--color-information-50);
+    --color-info-content: white;
     --color-success: var(--color-success-500);      /* success */
-    --color-success-content: var(--color-success-50);
+    --color-success-content: white;
     --color-warning: var(--color-warning-500);      /* warning */
-    --color-warning-content: var(--color-warning-50);
+    --color-warning-content: white;
     --color-error: var(--color-error-500);       /* error */
-    --color-error-content: var(--color-error-50);
+    --color-error-content: white;
 }
