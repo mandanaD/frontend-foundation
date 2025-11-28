@@ -89,5 +89,10 @@ export const Error: Story = {
     args: {
         variant: 'error',
         dataTip: 'Error Badge',
+        children:(
+            <Button variant={"destructive"}>
+                Hover Me!
+            </Button>
+        )
     }
 };
