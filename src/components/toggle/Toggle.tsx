@@ -32,6 +32,6 @@ export const Toggle = ({
             checked={checked}
             type="checkbox"
             defaultChecked={defaultChecked}
-            className={toggleClasses({size, variant})}/>
+            className={`${toggleClasses({variant,size})}`}/>
     )
 }
