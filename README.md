@@ -1,4 +1,4 @@
-# Steam Portfolio
+# Frontend Foundation
 
 A scalable frontend foundation built with React, TypeScript, Tailwind CSS, DaisyUI, and Storybook.
 Includes reusable UI components and design system setup.
