@@ -10,7 +10,7 @@ const meta: Meta<typeof Status> = {
     args: {
         size: "md",
         variant: "primary",
-        animation:"none"
+        animation: "none"
     },
     argTypes: {
         variant: {
@@ -66,6 +66,18 @@ export const Error: Story = {
         variant: 'error',
     },
 };
+
+export const AllSizes: Story = {
+    render: (args) => (
+        <div className="flex gap-2 flex-wrap">
+            <Status {...args} size="xs"/>
+            <Status {...args} size="sm"/>
+            <Status {...args} size="md"/>
+            <Status {...args} size="lg"/>
+            <Status {...args} size="xl"/>
+        </div>
+    )
+};
 export const Xs: Story = {
     args: {
         size: 'xs',
@@ -92,6 +104,15 @@ export const Xl: Story = {
     },
 };
 //animate
+export const AllAnimates: Story = {
+    render: (args) => (
+        <div className="flex gap-2 flex-wrap">
+            <Status {...args} animation="ping"/>
+            <Status {...args} animation="pulse"/>
+            <Status {...args} animation="bounce"/>
+        </div>
+    )
+};
 export const Ping: Story = {
     args: {
         animation: 'ping',
