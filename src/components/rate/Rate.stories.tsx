@@ -67,3 +67,42 @@ export const Circle: Story = {
         shape: 'circle',
     },
 };
+
+//sizes
+
+export const AllSizes: Story = {
+    render: (args) => (
+        <div className="flex gap-2 flex-wrap">
+            <Rate {...args} size="xs"/>
+            <Rate {...args} size="sm"/>
+            <Rate {...args} size="md"/>
+            <Rate {...args} size="lg"/>
+            <Rate {...args} size="xl"/>
+        </div>
+    )
+};
+export const Xs: Story = {
+    args: {
+        size: 'xs',
+    },
+};
+export const Md: Story = {
+    args: {
+        size: 'md',
+    },
+};
+export const Sm: Story = {
+    args: {
+        size: 'sm',
+    },
+};
+export const Lg: Story = {
+    args: {
+        size: 'lg',
+    },
+};
+export const Xl: Story = {
+    args: {
+        size: 'xl',
+    },
+};
